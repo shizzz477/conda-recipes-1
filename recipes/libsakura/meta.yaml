@@ -1,6 +1,9 @@
 # Copyright 2015-2016 Peter Williams and collaborators.
 # This file is licensed under a 3-clause BSD license; see LICENSE.txt.
 
+# XXX: needs to be built in py2 for now since the patch contains non-ASCII
+# and py3 conda-build can't handle that.
+
 package:
   name: libsakura
   version: "2.0.0"

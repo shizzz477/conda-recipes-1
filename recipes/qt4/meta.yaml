@@ -11,6 +11,7 @@
 # el-capitan.patch is from
 # https://github.com/Homebrew/homebrew-core/blob/master/Formula/qt.rb
 
+# XXXX PACKAGE PINS DROPPED WHILE c-f GETS SELF-CONSISTENT
 # c-f freetype: 2.7 --- no unusual deps
 # c-f fontconfig: 2.12.1 --- freetype~2.6
 # c-f freeglut: 3.0.0 --- no deps
@@ -40,36 +41,36 @@ build:
 
 requirements:
   build:
-    - dbus-cxx 0.9.*
-    - freetype 2.5.*  # [linux]
-    - fontconfig 2.12.*  # [linux]
-    - freeglut 3.0.*  # [linux]
-    - jpeg 9*
-    - libpng 1.6.*
-    - libtiff 4.0.*
-    - libxml2 2.9.*
-    - libuuid 1.0.* # [linux]
+    - dbus-cxx
+    - freetype  # [linux]
+    - fontconfig  # [linux]
+    - freeglut  # [linux]
+    - jpeg
+    - libpng
+    - libtiff
+    - libxml2
+    - libuuid # [linux]
     - modern-xorg-stack
-    - openssl 1.0.*
-    - pango 1.40.*  # [linux]
+    - openssl
+    - pango  # [linux]
     - python
-    - zlib 1.2.*
+    - zlib
 
   run:
-    - dbus-cxx 0.9.*
-    - freetype 2.5.*  # [linux]
-    - fontconfig 2.12.*  # [linux]
-    - freeglut 3.0.*  # [linux]
-    - jpeg 9*
-    - libpng 1.6.*
-    - libtiff 4.0.*
-    - libxml2 2.9.*
-    - libuuid 1.0.*  # [linux]
+    - dbus-cxx
+    - freetype  # [linux]
+    - fontconfig  # [linux]
+    - freeglut  # [linux]
+    - jpeg
+    - libpng
+    - libtiff
+    - libxml2
+    - libuuid  # [linux]
     - modern-xorg-stack
-    - openssl 1.0.*
-    - pango 1.40.*  # [linux]
+    - openssl
+    - pango  # [linux]
     - python
-    - zlib 1.2.*
+    - zlib
 
 about:
     home: http://qt-project.org
